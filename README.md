@@ -1,1 +1,1 @@
-# argocdsamplerepo
+This repository contains example applications for demoing ArgoCD functionality.
