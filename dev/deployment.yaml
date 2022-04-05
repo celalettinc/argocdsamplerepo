@@ -1,1 +1,19 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sampleapp
+spec:
+  selector:
+    matchLabels:
+      app: sampleapp
+  replicas: 3
+  template:
+    metadata:
+      lables:
+        app: sampleapp
+    spec:
+      containers:
+      - name: sampleapp
+        image: bgsacc972/celalettinc:v1.0
+        ports:
+        - containerPort: 8080
