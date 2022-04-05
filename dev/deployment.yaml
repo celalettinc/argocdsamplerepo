@@ -9,7 +9,7 @@ spec:
   replicas: 3
   template:
     metadata:
-      lables:
+      labels:
         app: sampleapp
     spec:
       containers:
